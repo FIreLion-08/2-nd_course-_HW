@@ -61,18 +61,22 @@ a {
   font-weight: 400;
   color: #FFFFFF;
 }
+.top__content--knopka:hover {
+  background: #EB443F;
+}
 
 .games {
   height: 556px;
   flex-shrink: 0;
   background: #000915;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 32px;
 }
 .games__for {
-  width: 379px;
+  width: 380px;
   height: 300px;
   flex-shrink: 0;
   border-radius: 16px;
@@ -86,6 +90,9 @@ a {
   font-weight: 600;
   line-height: 32px;
 }
+.games__for:hover {
+  box-shadow: 0 0 12px #65a2f1;
+}
 .games__for--1 {
   background-image: url(./img/png/02.06_Rectangle.png);
 }
@@ -94,4 +101,58 @@ a {
 }
 .games__for--3 {
   background-image: url(./img/png/02.08_Rectangle.png);
+}
+
+.season {
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 135px;
+  background-image: url(./img/jpg/03.01_Rectangle.jpg);
+}
+.season__left {
+  width: 584px;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.season__left__heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.season__left__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+.season__left__knopka {
+  width: 234px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #9C0332;
+  border-radius: 30px;
+  border: 1px transparent;
+  transition: all 0.3s;
+}
+.season__left__knopka:hover {
+  background: #EB443F;
+}
+.season__image {
+  width: 485px;
+  height: 333px;
+  background-image: url(./img/png/03.01_Seasonsimage.png);
+  background-repeat: no-repeat;
+  align-self: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
