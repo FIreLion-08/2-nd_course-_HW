@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        background-image: url(./img/jpg/Mob_01.01_Rectangle.jpg);
+        height: 735px;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        &__content {
+            display: flex;
+            justify-content: center;
+            &--h1 {
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+            &--p {
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+            }
+            &--knopka {
+                margin-top: 33px;
+                margin-bottom: 239px;
+            }
+        }
+    }
+
+}

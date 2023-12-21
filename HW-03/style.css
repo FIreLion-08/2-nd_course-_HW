@@ -155,4 +155,36 @@ a {
   background-repeat: no-repeat;
   align-self: center;
   justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    background-image: url(./img/jpg/Mob_01.01_Rectangle.jpg);
+    height: 735px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+  .top__content {
+    display: flex;
+    justify-content: center;
+  }
+  .top__content--h1 {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .top__content--p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .top__content--knopka {
+    margin-top: 33px;
+    margin-bottom: 239px;
+  }
 }/*# sourceMappingURL=style.css.map */
