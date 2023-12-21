@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.center {
+    padding-left: calc(50% - 700px);
+    padding-right: calc(50% - 700px);
+}
+.top {
+    height: 1024px;
+    background-image: url(./img/jpg/01.01_Rectangle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+    &__content {
+        padding-top: 217px;
+        padding-left: 120px;
+        display: flex;
+        flex-direction: column;
+        &--h1 {
+            width: 780px;
+            height: 125px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 64px;
+            font-weight: 700;
+        }
+        &--p {
+            width: 481px;
+            margin-top: 32px;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            & span {
+                font-weight: 700;
+            }
+        }
+        &--knopka {
+            margin-top: 44px;
+            width: 234.063px;
+            height: 48.603px;
+            flex-shrink: 0;
+            border-radius: 30px;
+            background: #9C0332;
+
+            font-size: 18px;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+    }
+
+
+}
+
+.games {
+    height: 556px;
+    flex-shrink: 0;
+    background: #000915;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 32px;
+    &__for {
+        width: 379px;
+        height: 300px;
+        flex-shrink: 0;
+        border-radius: 16px;
+
+        padding-left: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        font-size: 24px;
+        color: #FFFFFF;
+        font-weight: 600;
+        line-height: 32px;
+
+        &--1 {
+        background-image: url(./img/png/02.06_Rectangle.png);
+        }
+        &--2 {
+            background-image: url(./img/png/02.07_Rectangle.png);
+        }
+        &--3 {
+            background-image: url(./img/png/02.08_Rectangle.png);
+        }
+    }
+}
