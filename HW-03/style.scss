@@ -25,6 +25,7 @@ a {
         padding-left: 120px;
         display: flex;
         flex-direction: column;
+        gap: 32px;
         &--h1 {
             width: 780px;
             height: 125px;
@@ -36,7 +37,6 @@ a {
         }
         &--p {
             width: 481px;
-            margin-top: 32px;
             font-size: 18px;
             font-weight: 300;
             line-height: 32px;
@@ -45,7 +45,7 @@ a {
             }
         }
         &--knopka {
-            margin-top: 44px;
+            margin-top: 12px;
             width: 234.063px;
             height: 48.603px;
             flex-shrink: 0;
@@ -55,6 +55,8 @@ a {
             font-weight: 400;
             color: #FFFFFF;
             &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 5px #ccc;
                 background: #EB443F;
             }
         }
@@ -89,6 +91,7 @@ a {
         font-weight: 600;
         line-height: 32px;
         &:hover {
+            transform: scale(1.05);
             box-shadow: 0 0 12px #65a2f1;
         }
 
@@ -147,6 +150,8 @@ a {
             border: 1px transparent;
             transition: all .3s;
             &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 5px #ccc;
                 background: #EB443F;
             }
         }
