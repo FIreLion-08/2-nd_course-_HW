@@ -64,7 +64,7 @@ switch (monthNumber) {
         break;
 }
 
-
+// Дополнительные задания
 // Задание_08
 let clientOS = 0||1;
 clientOS = Number(prompt('Какая у вас операционная система? Если iOS, то введите цифру 0, есди Android, то цифру 1.'));
