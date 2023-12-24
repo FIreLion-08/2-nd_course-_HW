@@ -64,6 +64,7 @@ switch (monthNumber) {
         break;
 }
 
+
 // Дополнительные задания
 // Задание_08
 let clientOS = 0||1;
@@ -85,7 +86,6 @@ if (clientOS == 0 && clientDeviceYear >= 2015 ) {
 } else if (clientOS == 0 && clientDeviceYear < 2015) {
     alert ('Установите облегченную версию приложения для iOS по ссылке')
 }
-
 if (clientOS == 1 && clientDeviceYear >= 2015) {
     alert ('Установите версию приложения для Android по ссылке')
 } else if (clientOS == 1 && clientDeviceYear < 2015) {
