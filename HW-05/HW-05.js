@@ -5,24 +5,20 @@ function min(a1, b1) {
 min(8, 4);
 min(6, 6);
 
-
 //  Задание_02
 function classification(a2) {
     a2 % 2 === 0 ? console.log('Число четное') : console.log('Число нечетное');
 }
 classification(2);
 
-
 //  Задание_03
 let squared1 = (a3) => a**2
 squared1(5);
-
 let squared2 = (a3) => {
     let result = a3**2;
     return result;
 }
 squared2(5);
-
 
 //  Задание_04
 let userAnswer = prompt('Сколько тебе лет?');
@@ -31,13 +27,11 @@ let greeting = (userAnswer < 0) ? 'Вы ввели неправильное зн
 'Добро пожаловать!';
 alert(greeting);
 
-
 //  Задание_05
 function num(a5, b5) {
     isNaN(a5) || isNaN(b5) ?  console.log('Одно или оба значения не являются числом') : console.log(a * b);
 }
 num(5, 4);
-
 
 //  Задание_06
 function num() {
@@ -48,19 +42,16 @@ function num() {
 num();
 
 //  Задание_07
-
 const circle1 = {
     radius: 5,
     getArea: getArea,
     getPerimeter: getPerimeter,
 };
-
 const circle2 = {
     radius: 4,
     getArea: getArea,
     getPerimeter: getPerimeter,
 };
-
 function getArea() {
     return 3.14 * (this.radius ** 2);
 }
@@ -71,7 +62,6 @@ console.log(circle1.getArea());
 console.log(circle1.getPerimeter());
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
-
 
 //Задание 8
 function numMonth() {
