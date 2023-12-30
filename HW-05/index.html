@@ -37,7 +37,8 @@
         <div class="selection__left center">
             <h2 class="selection__left__heading">Времена года!</h2>
             <p class="selection__left__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <a href="#"><button class="selection__left__knopka">Играть!</button></a>
+            <button class="selection__left__knopka" onclick="numMonth()">Играть!</button></a>
+            <!--input type="button" value="Играть!" class="selection__left__knopka" onclick="numMonth()"/-->
         </div>
         <div class="selection__image selection__image__03"></div>
     </section>
@@ -59,7 +60,19 @@
     <footer class="footer center">
         <p class="footer__text">Все права защищены</p>
     </footer>
+
     <script src="HW-05.js"></script>
+    <script>
+        //Задание_08
+        function numMonth() {
+        let userNum = Number(prompt('Задание_08: Введит число, а я скажу к какому времени года он относится'));
+            (userNum === 3) || (userNum === 4) || (userNum === 5) ? alert('Задание_08: Весна') :
+            (userNum === 6) || (userNum === 7) || (userNum === 8) ? alert('Задание_08: Лето') :
+            (userNum === 9) || (userNum === 10) || (userNum === 11) ? alert('Задание_08: Осень') :
+            (userNum === 12) || (userNum === 1) || (userNum === 2) ? alert('Задание_08: Зима') :
+            alert('Задание_08: Некорректное число')
+        }
+    </script>
 
 </body>
 </html>
