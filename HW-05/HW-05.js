@@ -16,6 +16,7 @@ function min(a1, b1) {
     }
 console.log('Задание_01:', min(a1,b1));
 
+
 //  Задание_02
 let a2 = prompt('Задание_02: Введите число');
 function classification(a2) {
@@ -23,22 +24,24 @@ function classification(a2) {
 }
 classification(a2);
 
+
 //  Задание_03
 let a3 = prompt('Задание_03: Введите число');
 let squared1 = (a3) => a3**2
 squared1(a3);
-
 function squared2(a3) {
     let result = a3**2;
     return result;
 }
 squared2(a3);
 
+
 //  Задание_04
 let userAnswer = prompt('Задание_04: Сколько тебе лет?');
 let greeting = (userAnswer < 0) ? 'Задание_04: Вы ввели неправильное значение' :
 (userAnswer <= 12) ? 'Задание_04: Привет, друг!' : 'Задание_04: Добро пожаловать!';
 alert(greeting);
+
 
 //  Задание_05
 function num(a5, b5) {
@@ -48,6 +51,7 @@ function num(a5, b5) {
 }
 console.log(num(a5, b5));
 
+
 //  Задание_06
 function num() {
     let a6 = prompt('Задание_06: Введите число');
@@ -55,6 +59,7 @@ function num() {
     isNaN(NumUser) ? console.log('Задание_06: Переданный параметр не является числом') : console.log(`Задание_06: ${NumUser} в кубе равняется ${squared6}`);
 }
 num();
+
 
 //  Задание_07
 let a7 = Number(prompt(`Задание_01: Введи первое число`));
@@ -79,6 +84,7 @@ console.log('Задание_07: ', circle1.getArea());
 console.log('Задание_07: ', circle1.getPerimeter());
 console.log('Задание_07: ', circle2.getArea());
 console.log('Задание_07: ', circle2.getPerimeter());
+
 
 // //Задание_08
 // function numMonth() {
