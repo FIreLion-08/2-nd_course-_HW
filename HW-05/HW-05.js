@@ -29,11 +29,14 @@ classification(a2);
 let a3 = prompt('Задание_03: Введите число');
 let squared1 = (a3) => a3**2
 squared1(a3);
+console.log('Задание_03.1: ', squared1(a3));
+
 function squared2(a3) {
     let result = a3**2;
     return result;
 }
 squared2(a3);
+console.log('Задание_03.2: ', squared2(a3));
 
 
 //  Задание_04
@@ -41,29 +44,30 @@ let userAnswer = prompt('Задание_04: Сколько тебе лет?');
 let greeting = (userAnswer < 0) ? 'Задание_04: Вы ввели неправильное значение' :
 (userAnswer <= 12) ? 'Задание_04: Привет, друг!' : 'Задание_04: Добро пожаловать!';
 alert(greeting);
+console.log(greeting);
 
 
 //  Задание_05
+let a5 = prompt('Задание_05: Введите первое число');
+let b5 = prompt('Задание_05: Введите второе число');
 function num(a5, b5) {
-    let a5 = prompt('Задание_06: Введите первое число');
-    let b5 = prompt('Задание_06: Введите второе число');
     isNaN(a5) || isNaN(b5) ?  console.log('Задание_05: Одно или оба значения не являются числом') : console.log(a5 * b5);
 }
-console.log(num(a5, b5));
+console.log('Задание_05: ', num(a5, b5));
 
 
 //  Задание_06
-function num() {
+function num6() {
     let a6 = prompt('Задание_06: Введите число');
     let squared6 = a6 ** 3;
-    isNaN(NumUser) ? console.log('Задание_06: Переданный параметр не является числом') : console.log(`Задание_06: ${NumUser} в кубе равняется ${squared6}`);
+    isNaN(a6) ? console.log('Задание_06: Переданный параметр не является числом') : console.log(`Задание_06: ${a6} в кубе равняется ${squared6}`);
 }
-num();
+num6();
 
 
 //  Задание_07
-let a7 = Number(prompt(`Задание_01: Введи первое число`));
-let b7 = Number(prompt(`Задание_01: Введи второе число`));
+let a7 = Number(prompt(`Задание_07: Введи первое число`));
+let b7 = Number(prompt(`Задание_07: Введи второе число`));
 const circle1 = {
     radius: a7,
     getArea: getArea,
@@ -86,12 +90,12 @@ console.log('Задание_07: ', circle2.getArea());
 console.log('Задание_07: ', circle2.getPerimeter());
 
 
-// //Задание_08
-// function numMonth() {
-//     let userNum = Number(prompt('Задание_08: Введит число, а я скажу к какому времени года он относится'));
-//     (userNum === 3) || (userNum === 4) || (userNum === 5) ? alert('Задание_08: Весна') :
-//     (userNum === 6) || (userNum === 7) || (userNum === 8) ? alert('Задание_08: Лето') :
-//     (userNum === 9) || (userNum === 10) || (userNum === 11) ? alert('Задание_08: Осень') :
-//     (userNum === 12) || (userNum === 1) || (userNum === 2) ? alert('Задание_08: Зима') :
-//     alert('Задание_08: Некорректное число')
-// }
+//Задание_08
+function numMonth() {
+    let userNum = Number(prompt('Задание_08: Введит число, а я скажу к какому времени года он относится'));
+    (userNum === 3) || (userNum === 4) || (userNum === 5) ? alert('Задание_08: Весна') :
+    (userNum === 6) || (userNum === 7) || (userNum === 8) ? alert('Задание_08: Лето') :
+    (userNum === 9) || (userNum === 10) || (userNum === 11) ? alert('Задание_08: Осень') :
+    (userNum === 12) || (userNum === 1) || (userNum === 2) ? alert('Задание_08: Зима') :
+    alert('Задание_08: Некорректное число')
+}
