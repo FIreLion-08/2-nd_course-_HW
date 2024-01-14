@@ -1,6 +1,7 @@
 //  Задание_01
-let a1 = Number(prompt(`Задание_01: Введи первое число`));
-let b1 = Number(prompt(`Задание_01: Введи второе число`));
+console.log('Задание_01.');
+let a1 = Number(prompt(`Задание_01. Введи первое число`));
+let b1 = Number(prompt(`Задание_02. Введи второе число`));
 function min(a1, b1) {
     // //  Задание_01_v1 - Через IF
     // if (a1 < b1) {
@@ -14,49 +15,66 @@ function min(a1, b1) {
     //  Задание_01_v2
     return (a1 < b1) ? a1 : b1;
     }
-console.log('Задание_01:', min(a1,b1));
+console.log(min(a1,b1));
+console.log('');
 
 
 //  Задание_02
-let a2 = prompt('Задание_02: Введите число');
+console.log('Задание_02.');
+let a2 = prompt('Введите число');
 function classification(a2) {
-    a2 % 2 === 0 ? console.log('Задание_02: Число четное') : console.log('Задание_02: Число нечетное');
+    // if (a2 % 2 === 0) {
+    //     return 'Задание_02: Число четное'
+    // } else {
+    //     return 'Задание_02: Число нечетное'
+    // }
+    //  Задание_02_v2
+     return a2 % 2 === 0 ? 'Задание_02: Число четное' : 'Задание_02: Число нечетное';
 }
 classification(a2);
+console.log('');
 
 
 //  Задание_03
+console.log('Задание_03.');
 let a3 = prompt('Задание_03: Введите число');
 let squared1 = (a3) => a3**2
 squared1(a3);
-console.log('Задание_03.1: ', squared1(a3));
-
+console.log(squared1(a3))
 function squared2(a3) {
     let result = a3**2;
     return result;
 }
 squared2(a3);
-console.log('Задание_03.2: ', squared2(a3));
+console.log(squared2(a3));
+console.log('');
 
 
 //  Задание_04
+console.log('Задание_04.');
 let userAnswer = prompt('Задание_04: Сколько тебе лет?');
 let greeting = (userAnswer < 0) ? 'Задание_04: Вы ввели неправильное значение' :
 (userAnswer <= 12) ? 'Задание_04: Привет, друг!' : 'Задание_04: Добро пожаловать!';
 alert(greeting);
 console.log(greeting);
+//  Задание_04_v2
+// const user
+console.log('');
 
 
 //  Задание_05
+console.log('Задание_05.');
 let a5 = prompt('Задание_05: Введите первое число');
 let b5 = prompt('Задание_05: Введите второе число');
 function num(a5, b5) {
-    isNaN(a5) || isNaN(b5) ?  console.log('Задание_05: Одно или оба значения не являются числом') : console.log(a5 * b5);
+    isNaN(a5) || isNaN(b5) ?  console.log('Одно или оба значения не являются числом') : console.log(a5 * b5);
 }
-console.log('Задание_05: ', num(a5, b5));
+console.log(num(a5, b5));
+console.log('');
 
 
 //  Задание_06
+console.log('Задание_06.');
 function num6() {
     const a6 = prompt('Задание_06: Введите число');
     let squared6 = a6 ** 3;
@@ -66,9 +84,11 @@ function num6() {
     return `Задание_06: ${a6} в кубе равняется ${squared6}`;
 }
 console.log(num6());
+console.log('')
 
 
 //  Задание_07
+console.log('Задание_07.')
 let a7 = Number(prompt(`Задание_07: Введи первое число`));
 let b7 = Number(prompt(`Задание_07: Введи второе число`));
 const circle1 = {
@@ -87,10 +107,11 @@ function getArea() {
 function getPerimeter() {
     return 2 * 3.14 * this.radius;
 }
-console.log('Задание_07: ', circle1.getArea());
-console.log('Задание_07: ', circle1.getPerimeter());
-console.log('Задание_07: ', circle2.getArea());
-console.log('Задание_07: ', circle2.getPerimeter());
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
+console.log('')
 
 
 //Задание_08
