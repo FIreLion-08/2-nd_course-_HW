@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ_02.07</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@600&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="top center">
+        <div class="top__content">
+            <h1 class="top__content--h1">
+                Добро пожаловать <br>на мой сайт!
+            </h1>
+            <p class="top__content--p">
+                Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span>поехали</span> и <span>приступай</span>
+            </p>
+            <button class="top__content--knopka">
+                Поехали!
+            </button>
+        </div>
+    </section>
+
+    <section class="games center">
+        <a href="#" class="games__for games__for--1">Игра 1</a>
+        <a href="#" class="games__for games__for--2">Игра 2</a>
+        <a href="#" class="games__for games__for--3">Игра 3</a>
+    </section>
+
+    <section class="selection center">
+        <div class="selection__left center">
+            <h2 class="selection__left__heading">Времена года!</h2>
+            <p class="selection__left__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <button class="selection__left__knopka" onclick="numMonth();">Играть!</button>
+        </div>
+        <div class="selection__image selection__image__03"></div>
+    </section>
+    <section class="selection center">
+        <div class="selection__image selection__image__04"></div>
+        <div class="selection__left center">
+            <h2 class="selection__left__heading">Запомни слова</h2>
+            <p class="selection__left__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <button class="selection__left__knopka" onclick="remWords()">Играть!</button></a>
+        </div>
+    </section>
+    <section class="selection center">
+        <div class="selection__center center">
+            <h2 class="selection__center__heading">Игра в загадки</h2>
+            <p class="selection__center__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+            <a href="#"><button class="selection__center__knopka">Играть!</button></a>
+        </div>
+    </section>
+    <footer class="footer center">
+        <p class="footer__text">Все права защищены</p>
+    </footer>
+    <script src="HW-07.js"></script>
+</body>
+</html>
