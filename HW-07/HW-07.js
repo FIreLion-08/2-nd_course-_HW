@@ -133,11 +133,8 @@ let date = nowDate.getDate();
 if (date <10) {
     date='0'+date;
 };
-
 let month = months[nowDate.getMonth()-1];
-
 let day = days[nowDate.getDate()];
-
 let hours = nowDate.getHours();
 if (hours<10) {
     hours='0'+hours;
