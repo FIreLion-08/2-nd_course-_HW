@@ -10,7 +10,7 @@ function numMonth() {
 
 
 
-//  Задание_01: Преобразуйте строку js в верхний регистр JS..
+//  Задание_01: Преобразуйте строку js в верхний регистр JS.
 console.log('Задание_01.');
 let str01 = String(prompt('Задание_01: Введите строку'));
 console.log(str01.toUpperCase());
