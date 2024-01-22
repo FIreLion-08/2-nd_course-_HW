@@ -1,8 +1,33 @@
-//  Задание_01: Преобразуйте строку js в верхний регистр JS.
+//  Задание_01: С помощью метода массива sort отсортируйте массив people по возрастанию возраста и выведите их в консоль.
+// Пример сортировки по свойству в массиве объектов вы можете найти в документации: https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/sort.
+// const people = [
+//     { name: 'Глеб', age: 29 },
+//     { name: 'Анна', age: 17 },
+//     { name: 'Олег', age: 7 },
+//     { name: 'Оксана', age: 47 }
+//  ];
+//  //  Допишите колбэк для sort, изучите, как работает колбэк, в документации
+//  console.log(people.sort(...));
+//  // код выше должен вывеcти =>
+//  // [
+//  //  { name: 'Олег', age: 7 },
+//  //  { name: 'Анна', age: 17 },
+//  //  { name: 'Глеб', age: 29 },
+//  //  { name: 'Оксана', age: 47 }
+//  // ]
 console.log('Задание_01.');
-let str01 = String(prompt('Задание_01: Введите строку'));
-console.log(str01.toUpperCase());
+const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+];
+
+console.log(people.sort(''));
 console.log('');
+
+
+
 
 
 
