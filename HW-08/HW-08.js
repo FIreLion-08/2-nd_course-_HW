@@ -56,17 +56,16 @@ console.log('');
 
 //  Задание_03: Напишите программу, которая на протяжении 30 секунд каждые 3 секунды будет выводить в консоль текущую дату. Последней строкой должно выводиться сообщение «30 секунд прошло».
 // console.log('Задание 03. ');
-let currentDate = new Date();
-const timer = (currentDate) => {
+const timer = (() => {
     let step = setInterval(() => {
     console.log('Задание_03:', new Date);
-    }, 3000);
+    }, 3*1000);
     setTimeout(() => {
         clearInterval(step);
         console.log('Задание_03: 30 секунд прошло', '')
-    }, 30000);
-}
-console.log(timer(currentDate));
+    }, 30*1000);
+});
+console.log(timer());
 
 
 
