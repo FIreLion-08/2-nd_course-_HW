@@ -33,6 +33,7 @@ function isMale(num2) {
     return num2.gender === 'male';
 }
 function filter(arr2, ruleFunction) {
+    //Вариант №1
     const newArr2 = [];
     for (let i = 0; i < arr2.length; i++) {
         if (ruleFunction(arr2[i])) {
@@ -40,7 +41,10 @@ function filter(arr2, ruleFunction) {
         }
     }
     return newArr2;
+
+    return
 }
+
 console.log(filter([3, -4, 1, 9], isPositive));
 // Должен выводить [3, 1, 9]
 const people2 = [

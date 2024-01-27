@@ -31,7 +31,7 @@ console.log('');
 
 
 //  Задание_04: Даны числа 52, 53, 49, 77, 21, 32. Необходимо найти среди этих чисел наименьшее и наибольшее числа и вывести их в консоль.
-console.log('Задание 04.');
+console.log('Задание 04. Вриант #1');
 const num4 = [52, 53, 49, 77, 21, 32];
 const selectionOfnumbers = (arrNum4) => {
     console.log('Наибольшее число:', Math.max.apply(null, arrNum4)) //77
@@ -40,6 +40,10 @@ const selectionOfnumbers = (arrNum4) => {
 selectionOfnumbers(num4);
 console.log('');
 
+console.log('Задание 04. Вриант #1');
+console.log(Math.min(52, 53, 49, 77, 21, 32));
+console.log(Math.max(52, 53, 49, 77, 21, 32));
+console.log('');
 
 
 //  Задание_05: Создайте функцию, которая будет выводить в консоль рандомное число от 1 до 10.
@@ -58,21 +62,30 @@ console.log('');
 // Пример вызова:
 // getRandomArrNumbers(7); // [6, 2, 7] - массив заполнен случайными числами от 0 до 7, длина массива 7 / 2 = 3.5, округляем до ближайшего меньшего числа, получаем 3
 // getRandomArrNumbers(12); // [9, 11, 10, 9, 3, 0] - массив заполнен случайными числами от 0 до 12, длина массива 12 / 2 = 6
-console.log('Задание 06.');
+console.log('Задание 06. Вариант №1');
 let n6 = Number(prompt('Задание_06: Введите диапозон массива от 0 до __'));
 function randNum7(n6) {
     const arr6=[];
     let i6 = n6 / 2;
     i6 = Math.floor(i6);
-    for (i=0; i<i6; i++){
+    for (let i = 0; i < i6; i++){
         arr6.push(Math.round(Math.random() * n6));
-    };
+    }
     return arr6;
 }
 console.log(randNum7(n6));
 console.log('');
 
-
+console.log('Задание 06. Вариант №2');
+function getRandomArrNumbers(maxValue) {
+    let randomArr = [];
+    for (let i = 0; i < Math.floor(maxValue / 2); i++) {
+      randomArr.push(Math.round(Math.random() * maxValue));
+    }
+    return randomArr;
+  }
+console.log(getRandomArrNumbers(7), getRandomArrNumbers(12));
+console.log('');
 
 //  Задание_07: Напишите функцию, которая на вход принимает 2 целых числа, а в качестве результата возвращает случайное целое число в этом диапазоне.
 console.log('Задание 07.');
